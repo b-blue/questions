@@ -7,11 +7,14 @@ function App() {
   return (
     <Box
       sx={{
-        minHeight: "100vh",
+        height: "100vh",
+        overflow: "hidden",
         display: "flex",
         flexDirection: "column",
         justifyContent: "space-between",
         textAlign: "left",
+        padding: "20px",
+        boxSizing: "border-box",
       }}
     >
       <Question />
