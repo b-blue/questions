@@ -1,7 +1,11 @@
 import React, { useState } from "react";
 import questions from "../questions.json"; // Assuming you have a JSON file with questions
 
-const Question: React.FC = () => {
+interface QuestionStyleProps {
+  color: string;
+}
+
+const Question: React.FC<QuestionStyleProps> = ({color}) => {
   const [index, setIndex] = useState<number>(() =>
     Math.floor(Math.random() * questions.length)
   );
@@ -21,13 +25,13 @@ const Question: React.FC = () => {
         style={{
           marginTop: "20px",
           padding: "24px 32px",
-					fontFamily: "'Silkscreen', sans-serif",
+          fontFamily: "'Silkscreen', sans-serif",
           fontSize: "24px",
           fontWeight: "bold",
           cursor: "pointer",
           border: "2px solid black",
           borderRadius: "8px",
-					color: "#59ed42",
+          color: color,
           display: "inline-flex",
           justifyContent: "center",
           alignItems: "center",
