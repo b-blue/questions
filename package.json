@@ -1,6 +1,6 @@
 {
   "name": "questions",
-	"homepage": "https://b-blue.github.io/questions/",
+  "homepage": "https://b-blue.github.io/questions/",
   "private": true,
   "version": "0.0.0",
   "type": "module",
@@ -9,10 +9,13 @@
     "build": "tsc -b && vite build",
     "lint": "eslint .",
     "preview": "vite preview",
-		"predeploy": "npm run build",
-		"deploy": "gh-pages -d dist"
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist"
   },
   "dependencies": {
+    "@emotion/react": "^11.14.0",
+    "@emotion/styled": "^11.14.0",
+    "@mui/material": "^7.1.1",
     "react": "^19.1.0",
     "react-dom": "^19.1.0"
   },

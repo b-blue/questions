@@ -21,6 +21,7 @@ const Question: React.FC = () => {
         style={{
           marginTop: "20px",
           padding: "24px 32px",
+					fontFamily: "'Silkscreen', sans-serif",
           fontSize: "24px",
           fontWeight: "bold",
           cursor: "pointer",

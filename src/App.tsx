@@ -1,12 +1,27 @@
-import './App.css'
-import Question from './Question'
+import { Box } from "@mui/material";
+import "./App.css";
+import Question from "./Question";
+import { CurrentTime } from "./Time";
 
 function App() {
   return (
-    <>
-      <Question/>
-    </>
-  )
+    <Box
+      sx={{
+        minHeight: "100vh",
+        display: "flex",
+        flexDirection: "column",
+        justifyContent: "space-between",
+        textAlign: "left",
+      }}
+    >
+      <Question />
+      <footer>
+        <p>
+          Made with ❤️ by 🤖B - <CurrentTime />
+        </p>
+      </footer>
+    </Box>
+  );
 }
 
-export default App
+export default App;
