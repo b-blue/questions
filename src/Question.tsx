@@ -27,6 +27,7 @@ const Question: React.FC = () => {
           cursor: "pointer",
           border: "2px solid black",
           borderRadius: "8px",
+					color: "#59ed42",
           display: "inline-flex",
           justifyContent: "center",
           alignItems: "center",
